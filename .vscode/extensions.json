@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
   "recommendations": [
     "Vue.volar",
     "esbenp.prettier-vscode"
   ]
+=======
+  "recommendations": ["Vue.volar"]
+>>>>>>> 1a48234752524a9f5ce3e6aa1e71dc36365dfc70
 }

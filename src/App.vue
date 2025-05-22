@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
@@ -83,3 +84,24 @@ nav a:first-of-type {
   }
 }
 </style>
+=======
+<template>
+  <contact-us></contact-us>
+</template>
+
+
+
+<script>
+export default{
+  setup() {
+    const message = 'Hello World'
+    return {
+      message
+    }
+  }
+}
+</script>
+
+<style>
+</style>
+>>>>>>> 1a48234752524a9f5ce3e6aa1e71dc36365dfc70
