@@ -12,7 +12,7 @@ import OrderHistoryList from '@/views/order/OrderHistoryList.vue'
 import OrderManagement from '@/views/order/OrderManagement.vue'
 
 import { APP_ROUTE_NAMES } from '@/constants/routeNames'
-import { requireAuth, requireAdmin } from './guard'
+// import { requireAuth, requireAdmin } from './guard'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -42,45 +42,45 @@ const router = createRouter({
       path: '/cart',
       name: APP_ROUTE_NAMES.CART,
       component: ShoppingCart,
-      beforeEnter: [requireAuth],
+      // beforeEnter: [requireAuth],
     },
     {
       path: '/admin/manage-menu-items',
       name: APP_ROUTE_NAMES.MENU_ITEM_LIST,
       component: MenuItemList,
-      beforeEnter: [requireAdmin],
+      // beforeEnter: [requireAdmin],
     },
     {
       path: '/admin/manage-menu-items/create',
       name: APP_ROUTE_NAMES.CREATE_MENU_ITEM,
       component: MenuItemUpsert,
-      beforeEnter: [requireAdmin],
+      // beforeEnter: [requireAdmin],
     },
     {
       path: '/admin/manage-menu-items/update/:id',
       name: APP_ROUTE_NAMES.EDIT_MENU_ITEM,
       component: MenuItemUpsert,
       props: true,
-      beforeEnter: [requireAdmin],
+      // beforeEnter: [requireAdmin],
     },
     {
       path: '/admin/order-confirmation/:orderId',
       name: APP_ROUTE_NAMES.ORDER_CONFIRM,
       component: OrderConfirmation,
       props: true,
-      beforeEnter: [requireAuth],
+      // beforeEnter: [requireAuth],
     },
     {
       path: '/order-list',
       name: APP_ROUTE_NAMES.ORDER_LIST,
       component: OrderHistoryList,
-      beforeEnter: [requireAuth],
+      // beforeEnter: [requireAuth],
     },
     {
       path: '/admin/order-management',
       name: APP_ROUTE_NAMES.MANAGE_ORDER_ADMIN,
       component: OrderManagement,
-      beforeEnter: [requireAdmin],
+      // beforeEnter: [requireAdmin],
     },
     {
       path: '/:catchAll(.*)',
