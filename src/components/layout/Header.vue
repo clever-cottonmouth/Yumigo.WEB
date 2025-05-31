@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <router-link class="navbar-brand" :to="{ name: APP_ROUTE_NAMES.HOME }">
         <img
-          src="@/assets/logo.png"
+          src="../../assets//yubico.svg"
           alt="Logo"
           height="28px"
           class="d-inline-block align-text-top me-2"

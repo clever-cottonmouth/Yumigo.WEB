@@ -7,7 +7,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import App from './App.vue'
 import router from './router/routes'
-import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import { useThemeStore } from './stores/themeStore'
 const app = createApp(App)
