@@ -1,7 +1,7 @@
 <template>
   <Header />
   <RouterView />
-  <Footer />
+  <Footer class="fixed-bottom" />
 </template>
 
 <script setup>
