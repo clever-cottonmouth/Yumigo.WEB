@@ -103,7 +103,6 @@ const menuItems = reactive([])
 const loading = ref(false)
 const router = useRouter()
 const fetchMenuItems = async () => {
-  debugger
   menuItems.length = 0
   loading.value = true
   try {
